@@ -1,0 +1,446 @@
+\documentclass[12pt, xcolor={dvipsnames}]{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{array}
+
+\newcolumntype{x}[1]{%
+>{\centering\hspace{0pt}}p{#1}}
+\newcommand{\tn}{\tabularnewline\hline}
+
+\newcommand{\str}{{\color{red}STR}}
+\newcommand{\con}{{\color{red}CON}}
+\newcommand{\wiz}{{\color{red}WIZ}}
+\newcommand{\dex}{{\color{red}DEX}}
+\newcommand{\inte}{{\color{red}INT}}
+\newcommand{\cha}{{\color{red}CHA}}
+
+
+
+\title{Muladdoc "Fishy" Kohlburd}
+\subtitle{Paladin of Dumathion}
+\date{\vspace{-10ex}}
+\begin{document}
+
+\begin{frame}
+  \large
+  \centering
+  {\color{blue}Muladdoc "Fishy" Kohlburd}\\
+  \normalsize{Lvl 5 \color{OliveGreen}Paladin of Dumathion}\\
+  \vspace{1em}
+  \small
+  \centering
+  \begin{tabular}{c | c | c | c}
+    HP & AC & Prof & Speed\\ \hline
+    54 & 20 & +3 & 25\\
+  \end{tabular}\\
+\vspace{1em}
+  \begin{tabular}{c | c | c | c | c | c}
+    {\str} & {\cha} & {\con} & {\dex} & {\inte} & {\wiz}\\
+    19 & 17 & 18 & 12 & 10 & 9\\\hline
+    +4 & +3 & +4 & +1 & 0 & -1\\
+  \end{tabular}\\
+  \vspace{1em}
+  \begin{tabular}{c|c}
+  prepared spells: ({\cha} + lvl/2) & {\color{OliveGreen}5}\\ \hline
+
+  Spell slots & 1st - {\color{OliveGreen}4}, 2nd - {\color{OliveGreen}2}\\ \hline
+
+  Spell save DC: (8+prof+{\cha}) & {\color{OliveGreen}14}\\ \hline
+
+  Spell attack mod: (prof+{\cha}) & {\color{OliveGreen}+6}\\ \hline
+
+  Melee attack: roll + {\str} + prof & {\color{OliveGreen}roll + 7}\\
+\end{tabular}
+\end{frame}
+
+\begin{frame}
+  \tiny
+  Racials and Misc:\\ \vspace{1em}
+
+  \begin{tabular}{|x{9cm}|} \hline
+    \multicolumn{1}{|c|}{{\color{DarkOrchid}Sentinel - Feat}}\tn
+    If I hit creature with opportunity attack, their speed is 0 for the rest of their turn\tn
+    Creatures within 5ft provoke opportunity attacks even if they disengage\tn
+    Creatures within 5ft that attack someone else - I can use a reaction to melee attack\tn
+  \end{tabular}\\ \vspace{1em}
+
+  \begin{enumerate}
+  \small
+
+  \item Can see in dim light to 60ft as though in bright light
+    and {\color{DarkOrchid}Darkvision}
+
+  \item Advantage on saving throws against poison, resistant to poison damage
+
+  \item Speed not reduced by heavy armor
+
+  \item Proficient with smith's tools
+
+  \item speak/read/write Common + Dwarvish
+
+  \item on any {\inte} (History) check related to the origin of stonework
+    add double proficiency bonus to the check
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+  Class Misc:
+  \begin{itemize}
+    \item Defense (+1 AC while wearing armor)
+
+    \item Saving Throws:  {\wiz}, {\cha}
+
+    \item Skills: Persuasion, Athletics
+
+    \item Immunity to Disease
+
+    \item Extra Attack
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \tiny
+  Class Abilities:\\ \vspace{1em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{DarkOrchid}Divine Sense}}\tn
+    1 action & Self & immediate\tn
+    know location (60ft) (1 + {\cha}) times per long rest&
+      \multicolumn{2}{|x{6cm}|}{any celestial, fiend, undead, consecrated, desecrated}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{DarkOrchid}Lay on Hands}}\tn
+    1 action & touch & immediate\tn
+    up to (pally lvl x 5) (25)HP &
+      \multicolumn{2}{|x{6cm}|}{5HP == 1 disease or poison cured.  replenish pool on long rest}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{DarkOrchid}Divine Smite}}\tn
+    on melee hit & Self & immediate\tn
+    2d8 $+1d8$/SL up to 5d8 Radiant &
+      \multicolumn{2}{|x{6cm}|}{$+1d8$ if undead or fiend}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  @6th lvl\\
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{DarkOrchid}Aura of Protection}}\tn
+    while conscious & 10ft & immediate\tn
+    +{\cha} to saving throws &
+      \multicolumn{2}{|x{6cm}|}{myself and friendlies}\tn
+  \end{tabular}\\ \vspace{2em}
+
+
+\end{frame}
+
+\begin{frame}
+  \tiny
+  Oath Channel Divinty (once/short or long rest):\\ \vspace{1em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{Brown}Nature's Wrath}}\tn
+    1 action & 10ft & immediate\tn
+    restrained &
+      \multicolumn{2}{|x{6cm}|}{{\str} or {\dex} check at end of turn}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{Brown}Turn the Faithless}}\tn
+    1 action & 30ft & immediate\tn
+    turned for 1min (fiend or fey) &
+      \multicolumn{2}{|x{6cm}|}{{\wiz} saving throw.  must move away,
+      can't willingly be within 30ft.  Dash/Dodge actions allowed.
+      If shapeshifting, true form revealed.}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  Oath Features:\\ \vspace{1em}
+
+  @7th lvl
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{Brown}Aura of Warding}}\tn
+    always on & 10ft & immediate\tn
+    resistance to damage from spells &
+      \multicolumn{2}{|x{6cm}|}{myself and friendlies}\tn
+  \end{tabular}\\ \vspace{2em}
+
+\end{frame}
+
+\begin{frame}
+Items:
+  \begin{enumerate}
+     \item Splint Mail, 17AC, Disadvantage on sneak, (75gp)
+     \item Shield, +2AC, (10gp)
+     \item +1 Warhammer, 1d8/1d10 Bludgeoning (300gp?)
+     \item miner's pick (2gp)
+     \item smith's tools (20gp)
+     \item Holy Symbol (backup, shield has it painted on)
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \tiny
+  Oath Spells (no prep):\\ \vspace{1em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Ensnaring Strike}}\tn
+    1 bonus action & Self & concen 1min\tn
+    on hit, 1d6 ($+1d6$/SL) each turn piercing if failed {\str} save &
+      \multicolumn{2}{|x{6cm}|}{{\str} saving throw each turn.  Friendly creature
+      can also make {\str} save.}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Speak with Animals}}\tn
+    1 action & Self & 10min\tn
+    can speak with animals &
+      \multicolumn{2}{|x{6cm}|}{can ask small favors}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Moonbeam}}\tn
+    1 action & 120ft & concen 1min\tn
+    2d10 $+1d10$/SL Radiant &
+      \multicolumn{2}{|x{6cm}|}{{\con} saving throw, 1/2 dmg on save.  5ft radius
+      and 40ft high.  Shapechangers
+      at disadvantage, stuck in original form while in beam}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Misty Step}}\tn
+    1 action & 30ft & immediate\tn
+    DMG &
+      \multicolumn{2}{|x{6cm}|}{teleport to unoccupied zone you can see}\tn
+  \end{tabular}\\ \vspace{2em}
+
+\end{frame}
+
+\begin{frame}
+  \tiny
+  Paladin Spells (lvl 1):\\ \vspace{1em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Bless}}\tn
+    1 action & 30ft & concen 1min\tn
+    3 creatures &
+      \multicolumn{2}{|x{6cm}|}{($+1$ creature/SL),
+        on any attack/saving throw add d4 to roll}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Command}}\tn
+    1 action & 60ft & 1 round\tn
+    {\wiz} saving throw &
+      \multicolumn{2}{|x{6cm}|}{one word command. Doesn't work on undead,
+        doesn't work if command is directly harmful to them}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Compelled Duel}}\tn
+    1 bonus action & 30ft & concen 1min\tn
+    {\wiz} saving throw &
+      \multicolumn{2}{|x{6cm}|}{drawn to me, disadvantage on attacks against
+        anyone but me.  {\wiz} saving thow each ime it moves more than 30ft from me.
+        Ends if I attack different creature or cast spell on different target
+        or a friendly damages it or if I move $>30$ft away}\tn
+  \end{tabular}\\ \vspace{2em}
+
+    \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+      \multicolumn{3}{|c|}{{\color{OliveGreen}Cure Wounds}}\tn
+      1 action & touch & immediate\tn
+      (1d8 + spell mod + 1d8/SL)HP &
+        \multicolumn{2}{|x{6cm}|}{doesn't work on undead or costructs}\tn
+    \end{tabular}\\ \vspace{2em}
+
+\end{frame}
+
+\begin{frame}
+  \tiny
+  (lvl 1 spells continued):\\ \vspace{1em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Detect Evil and Good}}\tn
+    1 action & Self & immediate\tn
+    detect in 30ft &
+      \multicolumn{2}{|x{6cm}|}{aberration, fiend, celestial, fey, undead, cosecrated/desecrated}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Detect Magic}}\tn
+    1 action & Self & concen 10min\tn
+    sense within 30ft &
+      \multicolumn{2}{|x{6cm}|}{see aura, learn school.  blocked by:
+        3ft wood/dirt, 1ft stone, 1inch metal, thin sheet lead}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Detect Poison and Disease}}\tn
+    1 action & Self & concen 10min\tn
+    poisons, poisonous creatures, diseases &
+      \multicolumn{2}{|x{6cm}|}{also identifies it}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Divine Favor}}\tn
+    1 bonus action & Self & concen 1min\tn
+    extra 1d4 radiant on hit &
+      \multicolumn{2}{|x{6cm}|}{}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Heroism}}\tn
+    1 action & touch & concen 1min\tn
+    gain temp (spell mod)HP each turn &
+      \multicolumn{2}{|x{6cm}|}{immune to frighten, loses temp HP at end of spell}\tn
+  \end{tabular}\\ \vspace{2em}
+
+\end{frame}
+
+\begin{frame}
+  \tiny
+  (lvl 1 spells continued):\\ \vspace{1em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Protection from Good and Evil}}\tn
+    1 action & touch & Concen 10min\tn
+    disadvantage attacking target &
+      \multicolumn{2}{|x{6cm}|}{can't be charmed, frightened, possessed.  If already,
+        advantage saving against it.  (fey, elemental, abberation, fiend, celestial, undead)}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Purify Food and Drink}}\tn
+    1 action & 10ft & immediate\tn
+    food/drink free of poison/disease &
+      \multicolumn{2}{|x{6cm}|}{5ft sphere}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Searing Smite}}\tn
+    1 bonus action & self & immediate\tn
+    $1d6$ ($+1d6$/SL) fire &
+      \multicolumn{2}{|x{6cm}|}{{\con} save vs $1d6$ ongoing at start of turn}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Shield of Faith}}\tn
+    1 bonus action & 60ft & concen 10min\tn
+    $+2$AC &
+      \multicolumn{2}{|x{6cm}|}{}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{OliveGreen}Wrathful Smite}}\tn
+    1 bonus action & Self & concen 1min\tn
+    next hit $+1d6$ psychic &
+      \multicolumn{2}{|x{6cm}|}{{\wiz} saving throw or frightened,
+        as action can make {\wiz} save again each turn}\tn
+  \end{tabular}\\ \vspace{2em}
+
+\end{frame}
+
+\begin{frame}
+  \tiny
+  Paladin spells (lvl 2):\\
+  \vspace{1em}
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Aid}}\tn
+    1 action & 30 ft & 8 hrs\tn
+    +5HP to 3 creatures & \multicolumn{2}{|x{6cm}|}{+5maxHP (+5/SL over 2nd)}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Branding Smite}}\tn
+    1 bonus action & Self & Concen 1min\tn
+    next hit $+2d6$ ($+1d6$/SL over 2nd) radiant & \multicolumn{2}{|x{6cm}|}{
+                         target sheds dim light 5ft,
+                         cannot turn invisible}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Find Steed}}\tn
+    10min & 30ft & indefinite\tn
+    telepathic(1 mile) combat mount &
+      \multicolumn{2}{|x{6cm}|}{{\inte} at least 6,
+        can be dismissed and resummoned at full HP, stats of chosen form
+        but is celestial, fey, or fiend}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Lesser Restoration}}\tn
+    1 action & Touch & immediate\tn
+    cure 1 disease / condition &
+      \multicolumn{2}{|x{6cm}|}{can be blinded, deafened, paralyzed or poisoned}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Locate Object}}\tn
+    1 action & Self & concen 10min\tn
+    object within 1000ft &
+      \multicolumn{2}{|x{6cm}|}{can also tell direction of motion}\tn
+  \end{tabular}\\ \vspace{2em}
+
+\end{frame}
+\begin{frame}
+  \tiny
+  (lvl 2 spells continued):\\ \vspace{1em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Magic Weapon}}\tn
+    1 bonus action & touch & concen 1hr\tn
+    nonmagic becomes +1 weapon &
+      \multicolumn{2}{|x{6cm}|}{+2 at 4th SL, +3 at 6th SL}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Protection from Poison}}\tn
+    1 action & touch & 1hr\tn
+    neutralize 1 poison &
+      \multicolumn{2}{|x{6cm}|}{advantage on saving throws, resistance to poison damage}\tn
+  \end{tabular}\\ \vspace{2em}
+
+  \begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+    \multicolumn{3}{|c|}{{\color{NavyBlue}Zone of Truth}}\tn
+    1 action & 60ft & 10min\tn
+    \cha save or can't deliberately lie in radius &
+      \multicolumn{2}{|x{6cm}|}{15ft zone, I know if they succeed or fail, they are
+        aware of the spell}\tn
+  \end{tabular}\\ \vspace{2em}
+
+\end{frame}
+\begin{frame}
+Warhorse Stats (Find Steed spell):\\
+\vspace{1em}
+\centering
+\begin{tabular}{c | c | c}
+  HP & AC & Speed\\ \hline
+  19 & 11 & 60\\
+\end{tabular}\\
+\vspace{1em}
+\begin{tabular}{c | c | c | c | c | c}
+  {\str} & {\dex} & {\wiz} & {\inte} & {\wiz} & {\cha}\\
+  18 & 12 & 13 & 6 & 12 & 7\\ \hline
+  4 & 1 & 1 & -2 & 1 & -2\\
+\end{tabular}\\
+\vspace{1em}
+\raggedright
+Melee Attack w/ Hooves: +4 hit, 5ft, 2d6+4 \\
+\vspace{1em}
+\tiny
+\begin{tabular}{|x{3cm}|x{3cm}|x{3cm}|} \hline
+  \multicolumn{3}{|c|}{{\color{DarkOrchid}Trampling Charge}}\tn
+  on 20ft move if melee succeeds & Self & immediate\tn
+  knock prone, can use bonus action to hit with hooves &
+    \multicolumn{2}{|x{6cm}|}{{\str} check, DC14}\tn
+\end{tabular}\\ \vspace{2em}
+\end{frame}
+
+
+
+\end{document}
